@@ -15,7 +15,7 @@ func calculate(s string) int {
 				num = helper(i)
 			}
 			if !(val <= "9" && val >= "0") && val != " " || *i == len(s)-1 {
-				//非数字
+				//非数字或者最后一个字符
 				switch sign {
 				case "+":
 					stack = append(stack, num)
@@ -31,7 +31,6 @@ func calculate(s string) int {
 				num = 0
 			}
 			if val == ")" {
-				*i++
 				break
 			}
 		}
