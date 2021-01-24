@@ -1,4 +1,5 @@
-heap := make([]int, len(nums))
+func findKthLargestHeap(nums []int, k int) int {
+	heap := make([]int, len(nums))
 	idx := 0
 	for _, val := range nums {
 		heap[idx] = val
