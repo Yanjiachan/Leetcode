@@ -35,3 +35,4 @@ heap := make([]int, len(nums))
 		}
 	}
 	return heap[0]
+}
